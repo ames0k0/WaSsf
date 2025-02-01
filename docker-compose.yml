@@ -9,12 +9,6 @@ services:
     environment:
       - NODE_ENV=production
     restart: unless-stopped
-    healthcheck:
-      test: ['CMD', 'node', '/app/services/healthcheck']
-      interval: 1m30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
     depends_on:
       - wassf__fastapi
       - wassf__aiogram
@@ -25,6 +19,7 @@ services:
     container_name: wassf__fastapi
     ports:
       - 8300:8300
+    restart: unless-stopped
 
   wassf__aiogram:
     build:
@@ -32,3 +27,4 @@ services:
     container_name: wassf__aiogram
     ports:
       - 8989:8989
+    restart: unless-stopped
