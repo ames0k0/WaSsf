@@ -3,6 +3,5 @@
 </p>
 
 ```bash
-docker-compose up -d
-# ✔ Container WaSsf__Dashy  Started
+docker-compose up --build -d
 ```
