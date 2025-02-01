@@ -22,5 +22,5 @@ sections:
         url: http://localhost:8989
         id: 0_425_aiogram
       - title: fastapi
-        url: http://localhost:8090
+        url: http://localhost:8300
         id: 1_425_fastapi
