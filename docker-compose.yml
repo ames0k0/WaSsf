@@ -15,6 +15,9 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    depends_on:
+      - wassf__fastapi
+      - wassf__aiogram
 
   wassf__fastapi:
     build:
@@ -22,3 +25,10 @@ services:
     container_name: wassf__fastapi
     ports:
       - 8300:8300
+
+  wassf__aiogram:
+    build:
+      context: ./services/docs/aiogram
+    container_name: wassf__aiogram
+    ports:
+      - 8989:8989
