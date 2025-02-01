@@ -1,7 +1,7 @@
 services:
-  WaSsf__Dashy:
+  wassf__dashy:
     image: lissy93/dashy
-    container_name: WaSsf__Dashy
+    container_name: wassf__dashy
     volumes:
       - ./dashboard/dashy/user-data/conf.yml:/app/user-data/conf.yml
     ports:
@@ -15,3 +15,10 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+
+  wassf__fastapi:
+    build:
+      context: ./services/docs/fastapi
+    container_name: wassf__fastapi
+    ports:
+      - 8300:8300
