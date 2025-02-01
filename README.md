@@ -1,5 +1,6 @@
-Workers and Services setup files
-
+<p align="center">
+	<img href="./_readme/static/WaSsf.png" />
+</p>
 
 ```bash
 docker-compose up -d
