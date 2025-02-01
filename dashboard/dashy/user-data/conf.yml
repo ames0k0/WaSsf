@@ -1,0 +1,26 @@
+pageInfo:
+  title: WaSsf
+  description: Dashy for WaSsf
+  navLinks:
+    - title: GitHub
+      path: https://github.com/ames0k0/WaSsf
+appConfig:
+  theme: one-dark
+  layout: auto
+  iconSize: medium
+sections:
+  - name: docs
+    icon: fas fa-rocket
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: aiogram
+        url: http://localhost:8989
+        id: 0_425_aiogram
+      - title: fastapi
+        url: http://localhost:8090
+        id: 1_425_fastapi

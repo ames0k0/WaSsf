@@ -1,0 +1,17 @@
+services:
+  WaSsf__Dashy:
+    image: lissy93/dashy
+    container_name: WaSsf__Dashy
+    volumes:
+      - ./dashboard/dashy/user-data/conf.yml:/app/user-data/conf.yml
+    ports:
+      - 8090:8080
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'node', '/app/services/healthcheck']
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
