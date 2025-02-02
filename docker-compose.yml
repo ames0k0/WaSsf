@@ -1,3 +1,4 @@
+---
 services:
   wassf__dashy:
     image: lissy93/dashy
@@ -27,4 +28,15 @@ services:
     container_name: wassf__aiogram
     ports:
       - 8989:8989
+    restart: unless-stopped
+---
+services:
+  wassf__grafana:
+    # image: docker run -d -p 3000:3000 --name grafana grafana/grafana-enterprise:<version number>
+    image: grafana/grafana-enterprise
+    container_name: wassf__grafana
+    volumes:
+      - ./visualization/grafana/custom.ini:/usr/share/grafana/conf/custom.ini
+    ports:
+      - 3000:3000
     restart: unless-stopped
