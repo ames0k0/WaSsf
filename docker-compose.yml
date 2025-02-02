@@ -13,7 +13,6 @@ services:
     depends_on:
       - wassf__fastapi
       - wassf__aiogram
-
   wassf__fastapi:
     build:
       context: ./services/docs/fastapi
@@ -21,7 +20,6 @@ services:
     ports:
       - 8300:8300
     restart: unless-stopped
-
   wassf__aiogram:
     build:
       context: ./services/docs/aiogram
