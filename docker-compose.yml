@@ -32,7 +32,6 @@ services:
 ---
 services:
   wassf__grafana:
-    # image: docker run -d -p 3000:3000 --name grafana grafana/grafana-enterprise:<version number>
     image: grafana/grafana-enterprise
     container_name: wassf__grafana
     volumes:
