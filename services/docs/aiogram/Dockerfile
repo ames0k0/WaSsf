@@ -18,8 +18,9 @@ RUN pip install --break-system-packages .
 # FIXFOR
 # - No module named 'sphinx_substitution_extensions'
 # - No module named 'sphinx_copybutton'
-RUN pip install --break-system-packages Sphinx-Substitution-Extensions sphinx-copybutton
+# - No theme named `furo`
+RUN pip install --break-system-packages Sphinx-Substitution-Extensions sphinx-copybutton furo
 
 EXPOSE 8989
 
-CMD ["sphinx-autobuild", "--watch", "aiogram/", "docs/", "docs/_build/", "--port", "8989"]
+CMD ["sphinx-autobuild", "--watch", "aiogram/", "docs/", "docs/_build/", "--host", "0.0.0.0", "--port", "8989"]
