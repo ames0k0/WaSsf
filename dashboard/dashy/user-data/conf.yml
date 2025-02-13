@@ -39,3 +39,15 @@ sections:
         description: FastAPI documentation
         url: http://localhost:8300
         id: 1_425_fastapi
+  - name: tools
+    icon: fa fa-gear
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: pgAdmin4
+        url: http://localhost:80
+        id: 0_561_pgadmin
