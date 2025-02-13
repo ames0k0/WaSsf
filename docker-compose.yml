@@ -24,14 +24,14 @@ services:
 services:
   wassf__fastapi:
     build:
-      context: ./services/docs/fastapi
+      context: ./docs/fastapi
     container_name: wassf__fastapi
     ports:
       - 8300:8300
     restart: unless-stopped
   wassf__aiogram:
     build:
-      context: ./services/docs/aiogram
+      context: ./docs/aiogram
     container_name: wassf__aiogram
     ports:
       - 8989:8989
