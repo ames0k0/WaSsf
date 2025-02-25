@@ -9,12 +9,37 @@ appConfig:
   layout: auto
   iconSize: medium
 sections:
+  - name: nodes
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: PC
+        url: 192.168.0.108
+        target: modal
+        color: violet
+        tags:
+          - pc
+        id: 0_537_pc
+      - title: laptop
+        url: 192.168.0.105
+        target: modal
+        color: cyan
+        tags:
+          - laptop
+        id: 1_537_laptop
   - name: visualization
     icon: fa fa-chart-area
     items:
       - title: Grafana
         description: Grafana instance
         url: http://localhost:3000
+        color: violet
+        tags:
+          - pc
         id: 0_1426_grafana
     displayData:
       sortBy: default
@@ -34,10 +59,16 @@ sections:
       - title: AIOgram
         description: AIOgram documentation
         url: http://localhost:8989
+        color: violet
+        tags:
+          - pc
         id: 0_425_aiogram
       - title: FastAPI
         description: FastAPI documentation
         url: http://localhost:8300
+        color: violet
+        tags:
+          - pc
         id: 1_425_fastapi
   - name: tools
     icon: fa fa-gear
@@ -50,8 +81,17 @@ sections:
     items:
       - title: pgAdmin4
         url: http://localhost:80
+        color: violet
+        tags:
+          - pc
         id: 0_561_pgadmin
-  - name: node-laptop
+      - title: mongo-express
+        url: http://192.168.0.105:8081
+        color: cyan
+        tags:
+          - laptop
+        id: 1_561_mongoexpress
+  - name: Projects
     displayData:
       sortBy: default
       rows: 1
@@ -59,9 +99,9 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - title: dashy
-        url: http://192.168.0.105:8080
-        id: 0_1123_dashy
       - title: sh1chan-backend
         url: http://192.168.0.105:8000
-        id: 1_1123_shchanbackend
+        color: cyan
+        tags:
+          - laptop
+        id: 0_842_shchanbackend
