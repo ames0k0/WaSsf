@@ -51,3 +51,17 @@ sections:
       - title: pgAdmin4
         url: http://localhost:80
         id: 0_561_pgadmin
+  - name: node-laptop
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: dashy
+        url: http://192.168.0.105:8080
+        id: 0_1123_dashy
+      - title: sh1chan-backend
+        url: http://192.168.0.105:8000
+        id: 1_1123_shchanbackend
