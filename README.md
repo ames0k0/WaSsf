@@ -6,10 +6,41 @@
 docker-compose up -d --build
 ```
 
-| Service | Version | Updated |
-+ ------- + ------- + ------- +
-| Dashy | 3.1.1 | |
-| Grafana | v11.5.0 (f7a938db9a) | |
-| FastAPI | 0.115.12 | |
-| AIOgram | 3.20.0.post0 | 25.05.2025 |
-| pgAdmin 4 | 9.0 | |
+<table align=center>
+  <tr>
+    <th>Service</th>
+    <th>Version</th>
+    <th>Updated</th>
+    <th>At</th>
+  </tr>
+  <tr>
+    <td>Dashy</td>
+    <td>3.1.1</td>
+    <td>:orange_heart:</td>
+    <td>01.02.2025</td>
+  </tr>
+  <tr>
+    <td>Grafana</td>
+    <td>3.1.1</td>
+    <td>:orange_heart:</td>
+    <td>02.02.2025</td>
+  </tr>
+  <tr>
+    <td>FastAPI</td>
+    <td>0.115.12</td>
+    <td>:orange_heart:</td>
+    <td>01.02.2025</td>
+  </tr>
+  <tr>
+    <td>AIOgram</td>
+    <td>3.20.0.post0</td>
+    <td>:green_heart:</td>
+    <td>25.05.2025</td>
+  </tr>
+  <tr>
+    <td>pgAdmin4</td>
+    <td>9.0</td>
+    <td>:orange_heart:</td>
+    <td>01.02.2025</td>
+  </tr>
+</table>
