@@ -47,3 +47,12 @@ services:
     ports:
       - 80:80
     restart: unless-stopped
+---
+services:
+  wassf__fossflow:
+    build:
+      context: ./apps/fossflow
+    container_name: wassf__fossflow
+    ports:
+      - 3000:3000
+    restart: unless-stopped
