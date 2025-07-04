@@ -70,6 +70,35 @@ sections:
         tags:
           - pc
         id: 1_425_fastapi
+  - name: Projects
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: sh1chan-backend
+        url: http://192.168.0.105:8000
+        color: cyan
+        tags:
+          - laptop
+        id: 0_842_shchanbackend
+  - name: Apps
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: FossFLOW
+        description: https://github.com/stan-smith/FossFLOW
+        url: http://192.168.0.108:3000
+        tags:
+          - pc
+        color: violet
+        id: 0_404_fossflow
   - name: tools
     icon: fa fa-gear
     displayData:
@@ -91,17 +120,3 @@ sections:
         tags:
           - laptop
         id: 1_561_mongoexpress
-  - name: Projects
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - title: sh1chan-backend
-        url: http://192.168.0.105:8000
-        color: cyan
-        tags:
-          - laptop
-        id: 0_842_shchanbackend
