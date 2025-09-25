@@ -9,7 +9,7 @@ appConfig:
   layout: auto
   iconSize: medium
 sections:
-  - name: nodes
+  - name: Nodes
     displayData:
       sortBy: default
       rows: 1
@@ -23,16 +23,16 @@ sections:
         color: violet
         tags:
           - pc
-        id: 0_537_pc
+        id: 0_505_pc
       - title: laptop
         url: 192.168.0.105
         target: modal
         color: cyan
         tags:
           - laptop
-        id: 1_537_laptop
-  - name: visualization
-    icon: fa fa-chart-area
+        id: 1_505_laptop
+  - name: Visualization
+    icon: ''
     items:
       - title: Grafana
         description: Grafana instance
@@ -40,15 +40,15 @@ sections:
         color: violet
         tags:
           - pc
-        id: 0_1426_grafana
+        id: 0_1394_grafana
     displayData:
       sortBy: default
       rows: 1
       cols: 1
       collapsed: false
       hideForGuests: false
-  - name: docs
-    icon: fa fa-book
+  - name: Documentations
+    icon: ''
     displayData:
       sortBy: default
       rows: 1
@@ -62,14 +62,28 @@ sections:
         color: violet
         tags:
           - pc
-        id: 0_425_aiogram
+        id: 0_1485_aiogram
       - title: FastAPI
         description: FastAPI documentation
         url: http://localhost:8300
         color: violet
         tags:
           - pc
-        id: 1_425_fastapi
+        id: 1_1485_fastapi
+  - name: Databases
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: PostgreSQL
+        description: '5454'
+        tags:
+          - pc
+        color: violet
+        id: 0_904_postgresql
   - name: Projects
     displayData:
       sortBy: default
@@ -84,7 +98,7 @@ sections:
         tags:
           - laptop
         id: 0_842_shchanbackend
-  - name: Apps
+  - name: Applications
     displayData:
       sortBy: default
       rows: 1
@@ -98,9 +112,9 @@ sections:
         tags:
           - pc
         color: violet
-        id: 0_404_fossflow
-  - name: tools
-    icon: fa fa-gear
+        id: 0_1255_fossflow
+  - name: Tools
+    icon: ''
     displayData:
       sortBy: default
       rows: 1
@@ -113,10 +127,10 @@ sections:
         color: violet
         tags:
           - pc
-        id: 0_561_pgadmin
+        id: 0_529_pgadmin
       - title: mongo-express
         url: http://192.168.0.105:8081
         color: cyan
         tags:
           - laptop
-        id: 1_561_mongoexpress
+        id: 1_529_mongoexpress

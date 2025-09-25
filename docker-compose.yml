@@ -10,6 +10,7 @@ services:
     environment:
       - NODE_ENV=production
     restart: unless-stopped
+
 ---
 services:
   wassf__grafana:
@@ -20,6 +21,7 @@ services:
     ports:
       - 3000:3000
     restart: unless-stopped
+
 ---
 services:
   wassf__fastapi:
@@ -36,6 +38,22 @@ services:
     ports:
       - 8989:8989
     restart: unless-stopped
+
+---
+services:
+  wassf__postgres:
+    image: postgres
+    container_name: wassf__postgres
+    environment:
+      POSTGRES_PASSWORD: simple
+      POSTGRES_USER: postgres
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - wassf__postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    ports:
+      - 5454:5432
+
 ---
 services:
   wassf__pgadmin4:
@@ -47,6 +65,7 @@ services:
     ports:
       - 80:80
     restart: unless-stopped
+
 ---
 services:
   wassf__fossflow:
@@ -56,3 +75,6 @@ services:
     ports:
       - 3000:3000
     restart: unless-stopped
+
+volumes:
+  wassf__postgres_data:
