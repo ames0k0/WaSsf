@@ -50,7 +50,7 @@ docker-compose up -d --build
     <td>01.02.2025</td>
   </tr>
   <tr>
-    <td>PostgreSQL</td>
+    <td><a href="https://github.com/postgres/postgres">PostgreSQL</a></td>
     <td>17.5</td>
     <td>:green_heart:</td>
     <td>25.09.2025</td>
